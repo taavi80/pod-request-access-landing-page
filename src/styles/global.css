@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Chivo";
+  src: url("/assets/font/Chivo-Light.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img
+ {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #121725;
+  font-family: "Chivo";
+  text-align: center;
+  padding: 4rem 1.6rem;
+}
+
+main{
+  max-width: 375px;
+  margin-inline: auto;
+}

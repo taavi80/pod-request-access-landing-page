@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 const { pageTitle } = Astro.props;
 ---
 
@@ -8,9 +10,12 @@ const { pageTitle } = Astro.props;
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
+    <link rel="icon" href="/assets/favicon-32x32.png" type="image/x-icon">
     <title>{pageTitle}</title>
   </head>
   <body>
-    <slot />
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
