@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
+import Logo from "../components/Logo.astro";
+import Introduction from "../components/Introduction.astro";
 import Sounds from "../components/Sounds.astro";
 import Form from "../components/Form.astro";
 
@@ -8,37 +10,8 @@ const pageTitle = "Frontend Mentor | Pod request access landing page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <img src='/assets/desktop/logo.svg' alt='Pod logo' />
-  <h1>Publish your podcasts <span>everywhere.</span></h1>
-  <p>
-    Upload your audio to Pod with a single click. We’ll then distribute your
-    podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!
-  </p>
+  <Logo />
+  <Introduction />
   <Sounds />
   <Form />
 </BaseLayout>
-
-<style>
-  img {
-    margin-inline: auto;
-    margin-bottom: 4rem;
-  }
-  h1 {
-    color: #54e6af;
-    font-size: 1.625rem;
-    line-height: 1.7;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 1.6rem;
-  }
-  span {
-    color: #ffffff;
-  }
-  p {
-    max-width: 350px;
-    color: #c2cbe5;
-    line-height: 1.9;
-    margin-inline: auto;
-    margin-bottom: 3rem;
-  }
-</style>
