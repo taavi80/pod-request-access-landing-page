@@ -17,5 +17,24 @@ const { pageTitle } = Astro.props;
     <main>
       <slot />
     </main>
+    <footer>
+      <img src='./assets/desktop/bg-pattern-dots.svg' alt='' />
+    </footer>
   </body>
 </html>
+
+<style>
+  footer img {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    footer {
+      max-width: 768px;
+      margin-inline: auto;
+      padding-left: 3rem;
+    }
+    footer img {
+      display: block;
+    }
+  }
+</style>

@@ -4,18 +4,23 @@ import Podcasts from "./Podcasts.astro";
 import Form from "./Form.astro";
 ---
 
-<section class='main-container'>
+<section>
   <Introduction />
   <Podcasts />
   <Form />
 </section>
 
 <style>
-  @media (min-width: 678px) {
-    .main-container {
-      max-width: 600px;
-      background-color: grey;
-      padding-top: 6rem;
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 768px) {
+    section {
+      max-width: 630px;
+      background-color: #121725;
+      padding-top: 5rem;
+      margin-bottom: 6rem;
     }
   }
 </style>
