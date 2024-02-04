@@ -1,4 +1,4 @@
-<section class='sounds'>
+<section class='main-container__podcasts'>
   <img
     src='/assets/desktop/spotify.svg'
     alt='Spotify Logo'
@@ -26,19 +26,21 @@
 </section>
 
 <style>
-  .sounds {
+  .main-container__podcasts {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
   }
-  .sounds img {
+  .main-container__podcasts img {
     max-width: 76px;
   }
 
-  @media(min-width:678px){
-    .sounds{
-      
+  @media (min-width: 678px) {
+    .main-container__podcasts {
+    }
+    .main-container__podcasts img {
+      max-width: initial;
     }
   }
 </style>

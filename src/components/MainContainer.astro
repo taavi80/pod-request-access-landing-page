@@ -1,0 +1,21 @@
+---
+import Introduction from "./Introduction.astro";
+import Podcasts from "./Podcasts.astro";
+import Form from "./Form.astro";
+---
+
+<section class='main-container'>
+  <Introduction />
+  <Podcasts />
+  <Form />
+</section>
+
+<style>
+  @media (min-width: 678px) {
+    .main-container {
+      max-width: 600px;
+      background-color: grey;
+      padding-top: 6rem;
+    }
+  }
+</style>
