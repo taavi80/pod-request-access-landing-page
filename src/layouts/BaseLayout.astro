@@ -14,14 +14,12 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
-    <div class='top'>
-      <main>
-        <slot />
-      </main>
-      <footer>
-        <img src='./assets/desktop/bg-pattern-dots.svg' alt='' />
-      </footer>
-    </div>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <img src='./assets/desktop/bg-pattern-dots.svg' alt='dots for design' />
+    </footer>
   </body>
 </html>
 
