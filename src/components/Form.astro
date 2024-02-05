@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    position: relative;
   }
   input[type="email"] {
     background-color: #2c344b;
@@ -42,12 +43,12 @@
       order: 1;
     }
     .form-container {
-      position: relative;
       max-width: 450px;
       flex-direction: initial;
       margin-bottom: 3rem;
+      gap: initial;
+      
     }
-
     input[type="email"] {
       width: 100%;
     }
@@ -55,8 +56,8 @@
       position: absolute;
       top: 50%;
       right: 0;
-      transform: translate(-2%, -51%);
-      padding: 1rem 1.6rem;
+      transform: translate(-2%, -50%);
+      padding: .9rem 1.6rem;
     }
   }
 </style>
