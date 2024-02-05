@@ -3,6 +3,11 @@
   src: url("./assets/font/Chivo-Thin.ttf") format("truetype");
   font-display: swap;
 }
+@font-face {
+  font-family: "Chivo-Light";
+  src: url("./assets/font/Chivo-Light.ttf") format("truetype");
+  font-display: swap;
+}
 
 * {
   margin: 0;
@@ -39,5 +44,17 @@ main {
     background-repeat: no-repeat;
     background-size: contain;
     padding-left: 3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  main {
+    max-width: 1440px;
+    background: url("./assets/desktop/image-host.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 6rem;
   }
 }

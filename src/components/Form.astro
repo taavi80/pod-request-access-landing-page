@@ -47,7 +47,6 @@
       flex-direction: initial;
       margin-bottom: 3rem;
       gap: initial;
-      
     }
     input[type="email"] {
       width: 100%;
@@ -57,7 +56,15 @@
       top: 50%;
       right: 0;
       transform: translate(-2%, -50%);
-      padding: .9rem 1.6rem;
+      padding: 0.9rem 1.6rem;
+    }
+  }
+  @media (min-width: 1440px) {
+    .form-container {
+      max-width: 430px;
+    }
+    button {
+      font-family: "Chivo-Light";
     }
   }
 </style>

@@ -14,12 +14,14 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
-    <main>
-      <slot />
-    </main>
-    <footer>
-      <img src='./assets/desktop/bg-pattern-dots.svg' alt='' />
-    </footer>
+    <div class='top'>
+      <main>
+        <slot />
+      </main>
+      <footer>
+        <img src='./assets/desktop/bg-pattern-dots.svg' alt='' />
+      </footer>
+    </div>
   </body>
 </html>
 
@@ -35,6 +37,18 @@ const { pageTitle } = Astro.props;
     }
     footer img {
       display: block;
+    }
+  }
+  @media (min-width: 1440px) {
+    footer {
+      position: relative;
+      max-width: 1440px;
+    }
+    footer img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateY(-159%);
     }
   }
 </style>
