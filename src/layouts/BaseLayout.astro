@@ -26,6 +26,34 @@ const { pageTitle } = Astro.props;
 </html>
 
 <style>
+  main {
+    max-width: 375px;
+    margin-inline: auto;
+    padding-top: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    main {
+      max-width: 768px;
+      background: url("./assets/tablet/image-host.jpg");
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-left: 3rem;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    main {
+      max-width: 1440px;
+      background: url("./assets/desktop/image-host.jpg");
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-top: 6rem;
+    }
+  }
+
   footer img {
     display: none;
   }
