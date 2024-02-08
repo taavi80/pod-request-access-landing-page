@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Chivo";
-  src: url("./assets/font/Chivo-Thin.ttf") format("truetype");
+  src: url("/assets/font/Chivo-Thin.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "Chivo-Light";
-  src: url("./assets/font/Chivo-Light.ttf") format("truetype");
+  src: url("/assets/font/Chivo-Light.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -43,7 +43,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("./assets/mobile/image-host.jpg");
+    background-image: url("/assets/mobile/image-host.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.1;
